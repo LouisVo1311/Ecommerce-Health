@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    flex-direction: column;
+
+    .slider {
+        margin-bottom: 40px;
+
+        .banner__img {
+            width: 100%;
+        }
+    }
+
+    .partials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partials,
+    .product-discount {
+        margin-bottom: 20px;
+    }
+}

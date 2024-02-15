@@ -1,0 +1,69 @@
+//  SideBar
+.sidebar {
+
+    .logo-admin {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .profile__image {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        .profile__name {
+            color: var(--text-color-white);
+            font-size: 1.8rem;
+            margin-left: 20px;
+        }
+    }
+}
+
+// Container Admin
+.container-admin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header-admin {
+        width: 100%;
+        height: 68px;
+        border-bottom: 1px solid #dee2e6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-menu__icon {
+            font-size: 16px;
+            margin: 0 auto;
+        }
+    }
+
+    .body-admin {
+        padding: 40px;
+        width: 100%;
+        background-color: var(--background-admin);
+    }
+}
+
+// Popup
+.popup {
+    display: flex;
+    flex-direction: column;
+
+    .profile__popup {
+        cursor: pointer;
+        line-height: 3.5rem;
+
+        &:hover {
+            color: var(--btn-blue-color);
+        }
+    }
+}

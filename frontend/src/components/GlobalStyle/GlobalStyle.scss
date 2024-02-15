@@ -1,0 +1,134 @@
+//  Scss
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+// Slick Slider
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// Antd
+@import "antd/dist/antd.min.css";
+
+// Boostrap
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --height-header: 90px;
+    --header-navigation: 50px;
+    --header-typeproduct-search: calc(
+        var(--height-header) - var(--header-navigation)
+    );
+}
+
+:root {
+    --text-color-black: black;
+    --text-color-white: #fff;
+    --popular-color: #ef4922;
+    --footer-color: #052316;
+    --btn-yellow-color: #fcc000;
+    --btn-blue-color: #0f648d;
+    --btn-edit: #17a2b8;
+    --btn-delete: #dc3545;
+    --btn-detail: #007bff;
+    --background-admin: #f4f6f9;
+    --profit: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Popins", sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+// Buttons
+button,
+input {
+    outline: none !important;
+}
+
+a[href],
+Link[to] {
+    text-decoration: none;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 38px;
+    left: 15%;
+    transform: translate(-50%, 0);
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px !important;
+
+    & button {
+        font-size: 0 !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100rem !important;
+        background-color: #aaa !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    & .slick-active button {
+        transform: translate(-40%, 40%);
+        transition: all 0.3s ease-out;
+        height: 6px !important;
+        padding: 0 20px !important;
+        background-image: url(https://static-sieuthisongkhoe.cdn.vccloud.vn/wp-content/themes/stsk2020/static/images/bg-blue.jpg);
+    }
+
+    & li button::before {
+        display: none !important;
+    }
+}
+
+.ant-menu-item {
+    display: flex;
+    margin: 0 auto;
+    height: 100% !important;
+}
+
+.my-5 {
+    background-image: url(https://static-sieuthisongkhoe.cdn.vccloud.vn/wp-content/themes/stsk2020/static/images/bg-blue.jpg) !important;
+}
+
+.transition-3 {
+    transition: all 0.33s ease;
+    -webkit-transition: all 0.33s ease;
+    -moz-transition: all 0.33s ease;
+}
+
+.transition-5 {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.ce-chat-engine {
+    width: 100%;
+}
+
+.ce-wrapper {
+    min-height: 90vh;
+}
+
+.ant-card-bordered {
+    border: none;
+}
+
+.wrapper {
+    margin-top: 65px !important;
+}

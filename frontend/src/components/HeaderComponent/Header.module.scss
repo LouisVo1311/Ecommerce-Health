@@ -1,0 +1,123 @@
+// Header Navigation
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--height-header);
+    background-color: var(--text-color-white);
+    z-index: 20;
+
+    .header-navigation {
+        height: var(--header-navigation);
+
+        .header-navigation-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--header-navigation);
+
+            .section-navbar {
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .header-navigation-logo {
+                    color: var(--btn-yellow-color);
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    margin-right: 40px;
+
+                    .logo {
+                        width: 100%;
+                        height: var(--header-navigation);
+                        background-position: 50% center;
+                        background-size: contain;
+                    }
+                }
+            }
+
+            .section-cart-profile {
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                cursor: pointer;
+
+                .header-navigation-cart {
+                    margin-right: 40px;
+
+                    .cart__icon {
+                        text-align: center;
+                        font-size: 2.2rem;
+                        color: var(--btn-blue-color);
+                    }
+                }
+
+                .header-navigation-profile {
+                    display: flex;
+                    align-items: center;
+
+                    .profile__image {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        object-fit: "cover";
+                    }
+
+                    .profile__name {
+                        color: var(--btn-blue-color);
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-left: 10px;
+                    }
+
+                    .profile__label {
+                        font-size: 1.6rem;
+                        color: var(--btn-blue-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Popup
+.popup {
+    display: flex;
+    flex-direction: column;
+
+    .profile__popup {
+        cursor: pointer;
+        font-size: 1.4rem;
+        line-height: 3.5rem;
+
+        &:hover {
+            color: var(--btn-blue-color);
+        }
+    }
+}
+
+// Header TypeProduct
+.header-typeproduct {
+    height: var(--header-typeproduct-search);
+    background-image: url(https://static-sieuthisongkhoe.cdn.vccloud.vn/wp-content/themes/stsk2020/static/images/bg-blue.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-typeproduct-section {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        .typeproduct__label {
+            display: flex;
+            color: var(--text-color-white);
+            overflow: hidden;
+        }
+    }
+}
